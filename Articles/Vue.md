@@ -44,3 +44,25 @@ The first part of a vue component is the html. All the elements within that comp
         </div>
     </template>
 ```
+
+### 2. Script
+The second part is a bit more tricky because you have a lot of stuff going on in this section of a Vue component. Basically you can load in component and data in this section and use javascript to create some interaction inside your component and do something within the life cycle of this component. There is a lot to cover within this section so I will keep this for another article.
+```javascript
+<script>
+export default {
+    name: 'Article1',
+    data(){
+        return{
+        }
+    },
+    methods:{
+    }
+}
+</script>
+```
+### 3. Styling
+This part is kinda self explanatory. You keep your styling of a specific component within this section of the component. The styling of the component will be inherited from the parents styling. Unless you specifically tell Vue to keep a styling within a component by using the scoped tag like this: `<style scoped>`
+```javascript
+<style scoped>
+</style>
+```
